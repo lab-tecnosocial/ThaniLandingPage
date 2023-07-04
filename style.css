@@ -39,6 +39,7 @@
 }
 .columna p {
   font-size: large;
+  margin-bottom: 5%;
 }
 
 .cel {
@@ -46,7 +47,8 @@
   height: auto;
 }
 .gp {
-  width: 120px;
+  width: 160px;
+  margin-bottom: 20%;
 }
 
 
@@ -54,37 +56,30 @@
   .grid-celular {
     grid-template-columns: 1fr;
   }
+  .columna p {
+    margin-bottom: 30px;
+  }
 }
 
 .ofrece {
   text-align: center;
   font-size: xx-large;
   margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 
-.principal {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+
 
 .grid-container {
-  display: flex;
-  /* grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr); */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100vh;
   gap: 20px;
-  text-align: center;
-
 }
 
 .grid-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center baseline;
-  align-items: center;
+  text-align: center;
 }
 
 .grid-item img{
@@ -94,31 +89,27 @@
 
 .text-container {
   font-size: large;
+  margin-top: 10px;
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .grid-container {
     grid-template-columns: 1fr;
   }
-  .principal {
-    flex-direction: row;
-    align-items: flex-start;
-    text-align: left;
-  }
-} */
+}
 
+.principal h3{
+   margin-bottom: 10%;
+}
 
 
 
 
 .detalles {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
   width: 100%;
-}
-.textodetalle{
+  padding: 20px;
   display: flex;
+
   justify-content: center;
   align-items: center;
   font-size: 24px;
@@ -127,10 +118,9 @@
 
 @media (max-width: 768px) {
   .detalles {
-    grid-template-columns: 1fr;
+    flex-direction: row;
   }
 }
-
 
 
 
@@ -146,40 +136,37 @@ body{
 
 .principal h2, h3, p{
     text-align: center;
-    margin-bottom: 10%;
+
 }
 
 
 
 
-.CTA {
+.CTA-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 40px;
+}
 
+.itemCTA {
+  text-align: center;
+}
+.itemCTA img {
+  width: 160px;
 }
 
 .textoCTA {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   color: #0c1a3d;
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.textoCTA h3 {
-  margin-bottom: 10px;
-}
-
-.imgCTA img{
-    width: 120px;
-    height: 46px;
-    text-align: center baseline;
-}
 @media (max-width: 768px) {
-  .CTA {
+  .CTA-container {
     grid-template-columns: 1fr;
+  }
+  .itemCTA img {
+    width: 160px;
   }
 }
 

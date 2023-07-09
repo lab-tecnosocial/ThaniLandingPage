@@ -36,15 +36,17 @@
   align-items: center;
   color: #F5F5F5;
   text-align: center;
-  padding-right: 60px;
+  
 }
 .columna h4 {
   margin-bottom: 5%;
   font-size: x-large;
+  padding-right: 60px;
 }
 .columna p {
   font-size: large;
   margin-bottom: 5%;
+  padding-right: 60px;
 }
 
 .cel {
@@ -57,7 +59,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .grid-celular {
     grid-template-columns: 1fr;
     padding-top: 30px;
@@ -101,7 +103,7 @@
   margin-top: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
  .principal {
   height: auto;
  }
@@ -177,7 +179,7 @@ body{
   font-size: xx-large;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .CTA-container {
     grid-template-columns: 1fr;
   }

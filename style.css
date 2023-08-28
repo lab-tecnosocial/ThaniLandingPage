@@ -87,8 +87,8 @@ header {
   margin-bottom: 5%;
   padding-inline: 60px;
   color:#505050;
-
 }
+
 
 
 .cel {
@@ -156,6 +156,7 @@ header {
 .grid-item img {
   height: 500px;
   width: 222px;
+  border-radius: 12.5px;
 }
 
 .text-container {
@@ -206,9 +207,9 @@ header {
   display: flex;
   margin-top: 50px;
   margin-bottom: 50px;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
-  font-size: 12px;
+  font-size: 20px;
   background-color: #086E7D;
   color: #F5F5F5;
 }

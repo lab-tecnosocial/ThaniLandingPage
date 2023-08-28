@@ -9,7 +9,7 @@
 
 
 body {
-  color: #0c1a3d;
+  color: #505050;
   background: #F5F5F5;
   font-family: 'Poppins', sans-serif;
 }
@@ -61,8 +61,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #086E7D;
-  height: 97vh;
+  background-color: #F5F5F5;
+  height: 100vh;
   width: 100vw;
 }
 
@@ -71,7 +71,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #F5F5F5;
+  color: #FFC900;
   text-align: center;
 
 }
@@ -86,6 +86,8 @@ header {
   font-size: large;
   margin-bottom: 5%;
   padding-inline: 60px;
+  color:#505050;
+
 }
 
 
@@ -107,6 +109,7 @@ header {
   .cel {
     width: 150px;
     margin-bottom: 15%;
+    margin-top: 25%;
   }
 
   .columna h4 {
@@ -134,8 +137,8 @@ header {
 }
 
 .ofrece {
-  margin-bottom: 5rem;
-  ;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .grid-container {
@@ -146,6 +149,8 @@ header {
 
 .grid-item {
   text-align: center;
+  padding: 15px;
+  margin: 10px;
 }
 
 .grid-item img {
@@ -158,9 +163,14 @@ header {
   margin-top: 10px;
 }
 
+.principal h2, h3 {
+  color:#086E7D
+}
+
 @media (max-width: 600px) {
   .principal {
     height: auto;
+
   }
 
   .grid-container>* {
@@ -196,13 +206,35 @@ header {
   display: flex;
   margin-top: 50px;
   margin-bottom: 50px;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
-  font-size: 24px;
+  font-size: 12px;
   background-color: #086E7D;
   color: #F5F5F5;
 }
 
+.llama {
+  max-width: 150px;
+  height: auto;
+}
+
+.columnadetalles p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-inline: 60px;
+}
+
+@media (max-width: 48rem) {
+  .columnadetalles p {
+    padding-inline: 10px;
+  }
+  .llama {
+    margin-right: 4%;
+  }
+}
 
 
 /* 
@@ -234,7 +266,7 @@ header {
 
 .textoCTA h3 {
   font-family: 'Poppins', sans-serif;
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 @media (max-width: 48rem) {
@@ -251,7 +283,7 @@ footer {
   background-color: #f5f5f5;
   height: 100px;
   display: flex;
-  justify-content: left;
+  justify-content: right;
   align-items: end;
   margin-bottom: 10px;
   margin-left: 10px;

@@ -1,0 +1,33 @@
+---
+import Llama from "../assets/images/llama.svg";
+import ThaniLogo from "../assets/images/LogoThani_Color.png";
+import FacebookLogo from "../assets/icons/facebook.png";
+import InstagramLogo from "../assets/icons/instagram.png";
+---
+
+<footer class="flex flex-col gap-16 pt-9 pb-5">
+  <div
+    class="container flex items-center justify-between max-w-[1082px] mx-auto"
+  >
+    <div class="flex items-center gap-0">
+      <img src={Llama.src} alt="Image llama" class="w-[122px]" />
+      <img src={ThaniLogo.src} alt="Thani logo" class="w-[156px]" />
+    </div>
+    <div class="flex flex-col gap-4">
+      <h2 class="font-semibold text-textos">Encuéntranos en nuestras redes:</h2>
+      <div class="flex gap-8">
+        <a href="#">
+          <img src={FacebookLogo.src} alt="Facebook Logo" class="w-8" />
+        </a>
+        <a href="#">
+          <img src={InstagramLogo.src} alt="Instagram Logo" class="w-8" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="self-center flex gap-7 text-textos font-bold">
+    <a href="#" class="underline">Términos y condiciones</a>
+    <div class="font-light">|</div>
+    <span>© {new Date().getFullYear()} - All Rights Reserved</span>
+  </div>
+</footer>

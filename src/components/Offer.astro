@@ -1,0 +1,82 @@
+---
+import { Image } from "astro:assets";
+import EmotionalLog from "../assets/images/emotion-log.png";
+import EmotionalIntelligence from "../assets/images/emotional-intelligence.png";
+import Statistics from "../assets/images/statistics.png";
+---
+
+<section
+  class="container flex flex-col gap-4 md:gap-10 mx-auto mt-[64px] mb-[108px] max-w-[1082px]"
+>
+  <h2 class="text-xl md:text-2xl text-center text-thani100 font-bold">
+    ¿Qué te ofrece Thani?
+  </h2>
+  <div
+    class="flex flex-col items-center gap-7
+  md:flex-row md:items-start md:justify-between"
+  >
+    <article
+      class="flex flex-col-reverse md:flex-col items-center gap-4 md:gap-[50px] max-w-[311px]"
+    >
+      <Image
+        src={EmotionalLog}
+        alt="Image Emotion Log"
+        class="w-[169px] md:w-[279px]"
+      />
+      <div class="space-y-4 md:space-y-8">
+        <h3 class="text-sm md:text-2xl text-center text-thani100 font-bold">
+          Registra tus emociones
+        </h3>
+        <p class="text-sm md:text-base text-center text-textos">
+          Un espacio para reflexionar, expresar y aprender más sobre tus
+          emociones
+        </p>
+      </div>
+    </article>
+
+    <div class="block md:hidden border-t border-textos border-opacity-25 w-[70%] md:w-[992px]">
+    </div>
+
+    <article
+      class="flex flex-col-reverse md:flex-col items-center gap-4 md:gap-[50px] max-w-[311px]"
+    >
+      <img
+        src={EmotionalIntelligence.src}
+        alt="Image Emotional Intelligence"
+        class="w-[169px] md:w-[279px]"
+      />
+      <div class="space-y-4 md:space-y-8">
+        <h3 class="text-sm md:text-2xl text-center text-thani100 font-bold">
+          Desarrolla tu inteligencia emocional
+        </h3>
+        <p class="text-sm md:text-basetext-center text-textos">
+          Practica la gratitud, una actitud positiva y accede a consejos de cómo
+          gestionar tus emociones
+        </p>
+      </div>
+    </article>
+
+    <div class="block md:hidden border-t border-textos border-opacity-25 w-[70%] md:w-[992px]">
+    </div>
+
+    <article
+      class="flex flex-col-reverse md:flex-col items-center gap-4 md:gap-[50px] max-w-[311px]"
+    >
+      <img
+        src={Statistics.src}
+        alt="Image Statistics"
+        class="w-[169px] md:w-[279px]"
+      />
+      <div class="space-y-4 md:space-y-8">
+        <h3 class="text-sm md:text-2xl text-center text-thani100 font-bold">
+          Monitorea tu recorrido
+        </h3>
+        <p class="text-sm md:text-base text-center text-textos text-pretty">
+          Observa tu estado emocional a través de nuestras estadísticas. Obtén
+          información valiosa sobre tus altibajos emocionales y encuentra formas
+          de mantener el equilibrio
+        </p>
+      </div>
+    </article>
+  </div>
+</section>

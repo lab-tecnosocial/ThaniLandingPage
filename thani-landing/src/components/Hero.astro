@@ -1,0 +1,31 @@
+---
+import Blob from "../assets/blob1/Vector 157.svg";
+import Line1 from "../assets/blob1/Vector 158.svg";
+import Line2 from "../assets/blob1/Vector 159.svg";
+import PlayStoreBtn from "./ui/PlayStoreBtn.astro";
+---
+
+<main class="relative flex flex-col items-center gap-[88px]">
+  <img src={Blob.src} alt="Image Blob" class="absolute top-0 right-0" />
+  <img src={Line1.src} alt="Image Blob" class="absolute top-0 right-0" />
+  <img src={Line2.src} alt="Image Blob" class="absolute top-0 right-0" />
+  <div class="flex justify-start items-center gap-28 mt-14">
+    <img
+      src="/images/celular.png"
+      alt="Thani App Image"
+      class="drop-shadow-md"
+    />
+    <div class="flex flex-col items-center gap-20">
+      <h1 class="text-2xl text-center text-thani200 font-bold">
+        ¡Descubre Thani y conecta con tus emociones ahora mismo!
+      </h1>
+      <p class="text-center text-textos w-[620px] text-pretty">
+        ¿Estás listo para explorar y gestionar tus emociones como nunca antes?
+        Con Thani, podrás desbloquear el poder de tus emociones y experimentar
+        una vida más equilibrada y significativa.
+      </p>
+      <PlayStoreBtn />
+    </div>
+  </div>
+  <div class="border-t border-textos w-[1058px]"></div>
+</main>
